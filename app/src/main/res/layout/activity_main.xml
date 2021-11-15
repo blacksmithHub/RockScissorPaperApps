@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.torres.edgar.rockscissorpaperapps.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/scoreLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="0"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/scoreRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="0"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="266dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/imageMach1"
+            android:layout_width="194dp"
+            android:layout_height="242dp"
+            android:layout_margin="0.5dp"
+            android:contentDescription=""
+            android:src="@drawable/unknowncard2"
+            app:srcCompat="@drawable/paperleft1"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageMach2"
+            android:layout_width="match_parent"
+            android:layout_height="247dp"
+            android:layout_margin="0.5dp"
+            android:src="@drawable/unknowncard1"
+            app:srcCompat="@drawable/paperright1"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonControl"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:text="Bato Bato Pick" />
+
+</LinearLayout>
